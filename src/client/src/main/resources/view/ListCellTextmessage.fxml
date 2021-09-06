@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <BorderPane fx:id="BorderPane_OwnUser" prefWidth="655.0" style="-fx-background-color: white;"
+                AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0">
+        <top>
+          <Pane prefHeight="10.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+        </top>
+        <bottom>
+          <Pane prefHeight="10.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+        </bottom>
+        <right>
+          <Pane prefHeight="60.0" prefWidth="5.0" BorderPane.alignment="CENTER"/>
+        </right>
+        <left>
+            <AnchorPane fx:id="anchorPane_OwnUser" maxWidth="-Infinity" minHeight="81.0" minWidth="506.0"
+                        prefWidth="506.0" style="-fx-border-color: #77cc08; -fx-border-width: 2; -fx-border-radius: 20;"
+                        BorderPane.alignment="CENTER">
+                <BorderPane.margin>
+                    <Insets left="10.0"/>
+                </BorderPane.margin>
+                <VBox fx:id="VBox1" layoutX="18.0" layoutY="8.0" spacing="5.0" AnchorPane.bottomAnchor="24.0"
+                      AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="6.0">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                    <Label fx:id="UsernameTimeLabel_OwnUser" prefHeight="20.0" prefWidth="461.0"
+                           text="Username ( Time )">
+                        <font>
+                            <Font name="System Bold" size="12.0"/>
+                        </font>
+                    </Label>
+                    <Text fx:id="text_OwnUser" strokeType="OUTSIDE" strokeWidth="0.0" text="Text"
+                          wrappingWidth="442.13671875">
+                        <VBox.margin>
+                            <Insets left="20.0"/>
+                        </VBox.margin>
+                    </Text>
+                </VBox>
+            </AnchorPane>
+        </left>
+    </BorderPane>
+    <BorderPane fx:id="BorderPane_OtherUsers" nodeOrientation="RIGHT_TO_LEFT" prefWidth="655.0"
+                style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="0.0"
+                AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <top>
+          <Pane prefHeight="10.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+        </top>
+        <bottom>
+          <Pane prefHeight="11.0" prefWidth="649.0" BorderPane.alignment="CENTER"/>
+        </bottom>
+        <right>
+          <Pane prefHeight="60.0" prefWidth="5.0" BorderPane.alignment="CENTER"/>
+        </right>
+        <left>
+            <AnchorPane fx:id="anchorPane_OtherUsers" maxWidth="-Infinity" minHeight="81.0" minWidth="506.0"
+                        prefWidth="506.0" style="-fx-border-color: #cca808; -fx-border-width: 2; -fx-border-radius: 20;"
+                        BorderPane.alignment="CENTER">
+                <BorderPane.margin>
+                    <Insets left="10.0"/>
+                </BorderPane.margin>
+                <VBox fx:id="VBox" layoutX="18.0" layoutY="8.0" spacing="5.0" AnchorPane.bottomAnchor="24.0"
+                      AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="6.0">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                    <Label fx:id="UsernameTimeLabel_OtherUsers" prefHeight="20.0" prefWidth="343.0"
+                           text="Username ( Time )">
+                        <font>
+                            <Font name="System Bold" size="12.0"/>
+                        </font>
+                    </Label>
+                    <Text fx:id="text_OtherUsers" strokeType="OUTSIDE" strokeWidth="0.0" text="Text"
+                          wrappingWidth="438.13671875" VBox.vgrow="ALWAYS">
+                        <VBox.margin>
+                            <Insets left="20.0"/>
+                        </VBox.margin>
+                    </Text>
+                </VBox>
+            </AnchorPane>
+        </left>
+    </BorderPane>
+</AnchorPane>

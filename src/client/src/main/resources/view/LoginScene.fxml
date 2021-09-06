@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="1000.0" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #242A31;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.rmiMessengerClient.controller.LoginSceneController">
+    <HBox alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <VBox spacing="5.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <Pane minHeight="80.0" minWidth="600.0" prefHeight="80.0" prefWidth="453.0">
+                <Label fx:id="label_client" alignment="CENTER" layoutX="4.0" layoutY="5.0" prefWidth="600.0" text="XYZ Chat Client" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
+                </Label>
+            </Pane>
+            <Pane fx:id="loginAlert" minHeight="85.0" minWidth="225.0" prefHeight="172.0" prefWidth="453.0">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+                <Label fx:id="label_loginAlert" layoutX="244.0" layoutY="73.0" textFill="#f80606">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </Pane>
+            <Pane minHeight="43.0" minWidth="380.0" prefHeight="87.0" prefWidth="453.0">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+                <TextField fx:id="textField_username_login" alignment="CENTER" layoutX="36.0" layoutY="21.0" minHeight="45.0" minWidth="550.0" onKeyPressed="#OnKeyPressed_SwitchFocus" prefHeight="45.0" prefWidth="550.0" promptText="Username" style="-fx-background-color: #43454a;" styleClass="txtfld-font-color-white">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+                </TextField>
+            </Pane>
+            <Pane minHeight="43.0" minWidth="380.0" prefHeight="87.0" prefWidth="453.0">
+                <PasswordField fx:id="textField_password_login" alignment="CENTER" layoutX="36.0" layoutY="21.0" minHeight="45.0" minWidth="550.0" prefHeight="45.0" prefWidth="550.0" promptText="Password" style="-fx-background-color: #43454a;" styleClass="txtfld-font-color-white">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+                </PasswordField>
+            </Pane>
+            <Pane prefHeight="64.0" prefWidth="453.0">
+                <Button fx:id="button_login" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="336.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToSceneClient_ButtonLogin" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+                <Button fx:id="button_register" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToSceneClient_ButtonRegister" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Register" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+                </Button>
+            </Pane>
+        </VBox>
+    </HBox>
+</AnchorPane>

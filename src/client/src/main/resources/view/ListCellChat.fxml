@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: #242A31;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Pane prefHeight="60.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+       <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefHeight="80.0" prefWidth="300.0"
+                   style="-fx-border-color: White; -fx-border-width: 2; -fx-border-radius: 20; -fx-background-color: #242A31;"
+                   BorderPane.alignment="CENTER">
+           <BorderPane.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+           </BorderPane.margin>
+           <HBox layoutX="12.0" layoutY="7.0" prefHeight="63.0" prefWidth="276.0" spacing="15.0">
+               <StackPane prefHeight="63.0" prefWidth="46.0">
+                   <padding>
+                       <Insets top="7.0"/>
+                   </padding>
+                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                       <StackPane.margin>
+                           <Insets bottom="10.0"/>
+                       </StackPane.margin>
+                   </Circle>
+                   <ImageView fx:id="profileImageView" fitHeight="32.0" fitWidth="39.0" pickOnBounds="true"
+                              preserveRatio="true">
+                       <StackPane.margin>
+                           <Insets bottom="10.0"/>
+                       </StackPane.margin>
+                   </ImageView>
+               </StackPane>
+               <VBox>
+                   <HBox.margin>
+                       <Insets bottom="5.0" right="5.0" top="5.0"/>
+                   </HBox.margin>
+                   <Label fx:id="nameUserOrGroupLabel" prefHeight="18.0" prefWidth="212.0" text="Username"
+                          textFill="WHITE">
+                       <font>
+                           <Font name="System Bold" size="12.0"/>
+                       </font>
+                   </Label>
+                   <Label fx:id="lastDateLabel" nodeOrientation="RIGHT_TO_LEFT" prefHeight="23.0"
+                          prefWidth="220.0" style="-fx-wrap-text: true;" text="last Date" textFill="#f0eded">
+                       <font>
+                           <Font name="System Bold" size="11.0"/>
+                       </font>
+                   </Label>
+                   <Label fx:id="lastMessageLabel" prefHeight="20.0" prefWidth="215.0"
+                          style="-fx-wrap-text: true;" text="last message with User" textFill="#f0eded">
+                       <font>
+                           <Font name="System Bold" size="11.0"/>
+                       </font>
+                   </Label>
+               </VBox>
+           </HBox>
+       </AnchorPane>
+   </center>
+   <right>
+      <Pane prefHeight="60.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

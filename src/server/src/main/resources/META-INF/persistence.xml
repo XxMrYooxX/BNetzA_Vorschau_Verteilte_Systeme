@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+    <persistence-unit name="persistence">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>de.htwsaar.vs.rmiMessengerShared.User</class>
+        <class>de.htwsaar.vs.rmiMessengerShared.Message</class>
+        <class>de.htwsaar.vs.rmiMessengerShared.Chat</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:sqlite:mydatabase.db"/>
+            <property name="toplink.jdbc.driver" value="org.sqlite.JDBC"/>
+            <property name="hibernate.ejb.cfgfile" value="/hibernate.cfg.xml"/>
+        </properties>
+    </persistence-unit>
+</persistence>

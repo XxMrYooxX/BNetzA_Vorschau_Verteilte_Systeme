@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<BorderPane style="-fx-background-color: #242A31;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Pane prefHeight="60.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+       <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefHeight="80.0" prefWidth="300.0"
+                   style="-fx-border-color: White; -fx-border-width: 2; -fx-border-radius: 20; -fx-background-color: #242A31;"
+                   BorderPane.alignment="CENTER">
+           <BorderPane.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+           </BorderPane.margin>
+           <HBox layoutX="7.0" layoutY="7.0" prefHeight="70.0" prefWidth="278.0">
+               <VBox>
+                   <padding>
+                       <Insets top="4.0"/>
+                   </padding>
+                   <StackPane prefHeight="64.0" prefWidth="64.0">
+                       <Circle fill="WHITE" radius="30.0" stroke="BLACK" strokeType="INSIDE">
+                           <StackPane.margin>
+                               <Insets bottom="10.0"/>
+                           </StackPane.margin>
+                       </Circle>
+                       <ImageView fx:id="profileImageView" fitHeight="42.0" fitWidth="56.0"
+                                  pickOnBounds="true" preserveRatio="true">
+                           <StackPane.margin>
+                               <Insets bottom="10.0"/>
+                           </StackPane.margin>
+                       </ImageView>
+                   </StackPane>
+               </VBox>
+               <VBox>
+                   <padding>
+                       <Insets left="10.0" top="17.0"/>
+                   </padding>
+                   <Label fx:id="usernameLabel" prefHeight="27.0" prefWidth="210.0" text="Username"
+                          textFill="WHITE">
+                       <font>
+                           <Font name="System Bold" size="18.0"/>
+                       </font>
+                   </Label>
+               </VBox>
+           </HBox>
+       </AnchorPane>
+   </center>
+   <right>
+      <Pane prefHeight="60.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

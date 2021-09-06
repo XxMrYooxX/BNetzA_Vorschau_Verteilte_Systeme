@@ -1,0 +1,87 @@
+.side-bar {
+	-fx-background-color: D6D6D6;
+}
+
+.sidebar-btn {
+	-fx-background-color: transparent;
+}
+
+.sidebar-btn-icon {
+	-fx-fill: grey;
+}
+
+.sidebar-btn-icon {
+	-fx-text-fill: text;
+}
+
+.sidebar-btn:hover {
+	-fx-border-width: 0px 0px 0px 3px;
+	-fx-border-color: #2BBCF5;
+	
+}
+
+.sidebar-btn:hover .sidebar-btn-icon {
+	-fx-fill: #2BBCF5;
+}
+
+.sidebar-btn:hover .sidebar-btn-text {
+	-fx-text-fill: #2BBCF5;
+}
+
+.childpan {
+	-fx-background-color: #F9F8FD;
+}
+
+.childpan2 {
+	-fx-background-color: #EDEDED;
+}
+
+.searchicon {
+	-fx-border-color: #424242;
+	-fx-border-width: 0px 0px 2px 0px;
+}
+
+.noit-icon {
+	-fx-border-color: red;
+	-fx-border-radius: 100%;
+}
+
+/* TODO Design Einstellungen für einzelne Listviews*/
+
+.listView {
+    /*-fx-background-color: transparent;*/
+    /*-fx-text-fill: black;*/
+}
+
+
+.list-cell {
+    /*-fx-padding: 3 3 3 3;*/
+    /*-fx-text-fill: white;*/
+    -fx-background-color: transparent;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #A8A8A8;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #A8A8A8;
+}
+
+.txtfld {
+	-fx-background-radius: 20px;
+	-fx-background-color: #F9F8FD;
+}
+
+.txtfld-font-color-white {
+	-fx-text-fill: white;
+}
+
+.parting-line {
+	-fx-background-color: #000000;
+}
+
+.hbox-show-user {
+	-fx-background-color: #E0E0E0;
+}
+
